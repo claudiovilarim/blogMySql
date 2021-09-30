@@ -1,0 +1,53 @@
+cd ./projeto
+git init
+
+code .
+
+git status
+git add app.js  //se eu adicionei esse novo arquivo ao projeto, preciso informar ao git que é para ele começar a monitorar esse arquivo tambem. O arquivo é colocado em staged, ou seja, está pronto para ser commitado
+
+git commit -m "o que eu fiz nesse projeto"  // informar ao git que eu ja terminei meu trabalho. já pode tirar o snapshot do projeto
+git status
+git log
+
+// alterarndo o arquivo 
+
+git status
+git commit
+git status
+
+git push // envia meu repositório para o repositório remoto
+// erro porque o git não sabe quem é o meu repositório remoto.
+
+git remote add nomeDoRepositorio 
+ // ou (caso ainda não exista)
+git remote add origin https://github.com/claudiovilarim/blogMySql.git
+
+git push -u origin master // (se for a primeira vez)
+ // ou
+git push
+
+
+Git Branch -> linha principal do projeto
+    Posso criar um branch secundário para não mexer no projeto principal
+
+Commit -> snapshot do codigo/projeto (terminei)
+staged - > area que será commitada
+
+cd ./project
+git config --global user.name "claudio lima"
+git config --global user.email claudio.v.lima2@gmail.com
+git clone https://github.com/claudiovilarim/blogMySql.git // traz esse projeto do github para dentro da minha máquina
+git add file.html // Esse arquivo passará a ser monitorado
+ // Faz alteração no arquivo que quiser
+git commit -m "meu comentario" file.html // tira snapshot do arquivo para ser enviado assim ao github
+git push -u origin master
+
+
+
+
+
+
+
+
+
